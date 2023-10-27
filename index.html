@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+
+<h2>Iniciar Sesión</h2>
+
+<form action="php/procesar_login.php" method="post">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required><br><br>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+    <input type="submit" value="Iniciar Sesión">
+</form>
+
+</body>
+</html>
+Este es un formulario HTML simple con dos campos: uno para el nombre de usuario y otro para la contraseña. El formulario se envía a un archivo PHP llamado "procesar_login.php" cuando el usuario hace clic en el botón "Iniciar Sesión". El atributo required se utiliza para indicar que ambos campos son obligatorios.
+
+Nota que este es solo el front-end del formulario de inicio de sesión. Necesitarás un script de back-end (en este caso, un archivo PHP) para procesar los datos del formulario, verificar la autenticación del usuario y redirigir al usuario a la página correspondiente. El script de procesamiento podría verse así:
